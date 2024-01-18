@@ -1,6 +1,5 @@
 import { Module } from '@nestjs/common';
 import { ConfigModule } from '@nestjs/config';
-import { UserModule } from './modules/user/user.module';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { env } from './shared/config/env';
 
@@ -19,7 +18,6 @@ import { env } from './shared/config/env';
         synchronize: true,
       }),
     }),
-    UserModule,
   ],
   controllers: [],
   providers: [],
